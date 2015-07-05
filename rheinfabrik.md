@@ -4,4 +4,4 @@ title: Rheinfabrik
 permalink: /rheinfabrik/
 ---
 Since August of 2013, I am an *iOS Developer* and *Android Developer* at [Rheinfabrik](http://rheinfabrik.de). There we care about high quality code and happy customers.  
-Our clients include [Handelsblatt](http://www.handelsblatt.com), [HRS](http://www.hrs.de), [Simfy](http://www.simfy.de/start), [trivago](http://www.trivago.de/) and many more.
+Our clients include [trivago](http://www.trivago.de/), [HRS](http://www.hrs.de), [BVB](http://www.bvb.de/) and many more.
