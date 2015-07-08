@@ -7,7 +7,7 @@ baseurl:     ""
 url:         ""
 
 # Google analytics
-google_analytics:
+google_analytics: UA-64919720-1
 
 # Optional features
 animated:           false
