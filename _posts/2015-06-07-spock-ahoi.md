@@ -3,7 +3,7 @@ layout:     post
 title:      Spock Ahoi!
 date:       2015-07-06
 summary:    Use Spock! Your tests want to be fabulous as well!
-categories: testing, android
+categories: testing android
 ---
 
 Writing good tests is a hard, time consuming and confusing task. 
