@@ -100,7 +100,7 @@ class UniverseSumSpecs extends AndroidSpecification {
             sum == 42
     }
 
-    def "is 43 if contains one black hole"() {
+    def "is 43 if it contains one black hole"() {
 
         given: "A new universe"
             Universe universe = new Universe()
