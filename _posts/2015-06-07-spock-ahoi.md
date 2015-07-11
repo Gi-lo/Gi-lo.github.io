@@ -105,7 +105,7 @@ class UniverseSumSpecs extends AndroidSpecification {
         given: "A new universe"
             Universe universe = new Universe()
 
-        and: "a new black hole is added to it"
+        and: "a new black hole is added"
             Blackhole blackhole = new Blackhole()
             universe.add(blackhole)
 
@@ -116,14 +116,13 @@ class UniverseSumSpecs extends AndroidSpecification {
             sum == 43
     }
 
-    def "throws IllegalStateException if it contains chuck norris"() {
+    def "throws IllegalStateException if it contains Chuck Norris"() {
 
         given: "A new universe"
             Universe universe = new Universe()
 
-        and: "a new black hole is added to it"
-            Blackhole blackhole = new Blackhole()
-            universe.add(blackhole);
+        and: "Chuck Norris is added"
+            universe.add(ChuckNorris.getInstance())
 
         when: "asked for the sum"
             int sum = universe.sum()
@@ -170,31 +169,33 @@ As stated above Spock is inspired by some Behavior-driven development syntax fra
 Oh and did I mention that we  no longer need camelcase method names? A simple string is enough to define a method in Groovy. This is espacially handy for our last test:
 
 ```groovy
-def "throws IllegalStateException if it contains chuck norris"() {}
+def "throws IllegalStateException if it contains Chuck Norris"() {}
 ```
 
 **Let's dive deeper into the last test:**
 
 ```groovy
-given: "A new universe"
-	Universe universe = new Universe()
+def "throws IllegalStateException if it contains Chuck Norris"() {
 
-and: "a new black hole is added to it"
-    Blackhole blackhole = new Blackhole()
-    universe.add(blackhole)
+	given: "A new universe"
+		Universe universe = new Universe()
 
-when: "asked for the sum"
-    int sum = universe.sum()
+	and: "Chuck Norris is added"
+		universe.add(ChuckNorris.getInstance())
 
-then: "it throws an IllegalStateException"
-    thrown(IllegalStateException)
+	when: "asked for the sum"
+		int sum = universe.sum()
+
+	then: "it throws an IllegalStateException"
+		thrown(IllegalStateException)
+}
 ```
 
 So instead of try and catch we can use the method ```thrown()```. It can take a specific exception or even no argument at all if you simply want to assert that anything is thrown.
 
 **That's it?**
 
-Of course not! This post aims to provide only a small glance over the possibilities of the Spock Framework. For more goodness take a look at the [excellent documentation](http://spockframework.github.io/spock/docs/1.0/index.html). There you may find features that will blow your mind! Easy *Stubbing*, *Mocking* and the amazing output of a failing test are just a few worth mentioning. I might add another post describing some of the nicest gems in Spock. Let me know if you're interested. Meanwhile you can take a look at the tests of my [MVVM example project](https://github.com/rheinfabrik/android-mvvm-example/tree/master/MVVM-Example/app/src/androidTest/groovy).
+Of course not! This post aims to provide only a small glance over the possibilities of the Spock Framework. For more goodness take a look at the [excellent documentation](http://spockframework.github.io/spock/docs/1.0/index.html). There you may find features that will blow your mind! Easy *Stubbing*, *Mocking* and *the amazing output of a failing test* are just a few worth mentioning. I might add another post describing some of the nicest gems in Spock. Let me know if you're interested. Meanwhile you can take a look at the tests of my [MVVM example project](https://github.com/rheinfabrik/android-mvvm-example/tree/master/MVVM-Example/app/src/androidTest/groovy).
 
 **So how to get it?**
 
