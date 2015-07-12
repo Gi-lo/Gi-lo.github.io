@@ -195,7 +195,7 @@ So instead of try and catch we can use the method ```thrown()```. It can take a 
 
 **That's it?**
 
-Of course not! This post aims to provide only a small glance over the possibilities of the Spock Framework. For more goodness take a look at the [excellent documentation](http://spockframework.github.io/spock/docs/1.0/index.html). There you may find features that will blow your mind! Easy *Stubbing*, *Mocking* and *the amazing output of a failing test* are just a few worth mentioning. I might add another post describing some of the nicest gems in Spock. Let me know if you're interested. Meanwhile you can take a look at the tests of my [MVVM example project](https://github.com/rheinfabrik/android-mvvm-example/tree/master/MVVM-Example/app/src/androidTest/groovy).
+Of course not! This post aims to provide only a small glance over the possibilities of the Spock Framework. For more goodness take a look at the [excellent documentation](http://spockframework.github.io/spock/docs/1.0/index.html). There you may find features that will blow your mind! Easy *Stubbing*, *Mocking* and *the amazing output of a failing test* are just a few worth mentioning. I might add another post describing some of the nicest gems in Spock. Let me know if you're interested. Meanwhile you can take a look at the tests of my [MVVM sample application](https://github.com/rheinfabrik/android-mvvm-example/tree/master/MVVM-Example/app/src/androidTest/groovy) or [Heimdall](https://github.com/rheinfabrik/Heimdall.droid).
 
 **So how to get it?**
 
